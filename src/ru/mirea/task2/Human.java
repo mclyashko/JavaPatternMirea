@@ -29,17 +29,21 @@ public class Human {
         return age;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
+// --Commented out by Inspection START (20.02.2022, 20:52):
+//    public String getFirstName() {
+//        return firstName;
+//    }
+// --Commented out by Inspection STOP (20.02.2022, 20:52)
 
     public String getLastName() {
         return lastName;
     }
 
-    public LocalDate getBirthDate() {
-        return birthDate;
-    }
+// --Commented out by Inspection START (20.02.2022, 20:52):
+//    public LocalDate getBirthDate() {
+//        return birthDate;
+//    }
+// --Commented out by Inspection STOP (20.02.2022, 20:52)
 
     public int getWeight() {
         return weight;

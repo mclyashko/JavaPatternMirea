@@ -12,6 +12,6 @@ public class Coder implements Function<String[], String[]> {
             newArray[strings.length - i - 1] = new StringBuilder(strings[i]).reverse().toString();
         }
 
-        return (String[]) newArray;
+        return newArray;
     }
 }
