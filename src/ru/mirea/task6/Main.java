@@ -8,6 +8,8 @@ import ru.mirea.task6.factoryMethod.BadCatFactory;
 import ru.mirea.task6.factoryMethod.CatFactory;
 import ru.mirea.task6.factoryMethod.ProletarianCatFactory;
 import ru.mirea.task6.factoryMethod.RedHeadedCatFactory;
+import ru.mirea.task6.prototypeMethod.Cat;
+import ru.mirea.task6.prototypeMethod.Dog;
 
 public class Main {
     public static void main(String[] args) {
@@ -44,5 +46,23 @@ public class Main {
         skeleton.ultimateAbility();
 
         System.out.println("-----------------------------------------------------------------------------------------");
+
+        Cat cat = new Cat();
+        Dog dog = new Dog("DIO");
+
+        System.out.println(cat.getVerse());
+        System.out.println(dog.getMusicalGroup());
+
+        Cat catCopy = (Cat) cat.copy();
+        Dog dogCopy = (Dog) dog.copy();
+
+        System.out.println(catCopy.getVerse());
+        System.out.println(dogCopy.getMusicalGroup());
+
+        if (cat == catCopy || dog == dogCopy) {// сравнение ссылок
+            System.out.println("Something went wrong");
+        } else {
+            System.out.println("It's ok");
+        }
     }
 }
