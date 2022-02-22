@@ -1,6 +1,6 @@
-package ru.mirea.task7.Composite.Order;
+package ru.mirea.task7.composite.order;
 
-import ru.mirea.task7.Composite.Order.goods.Costable;
+import ru.mirea.task7.composite.order.goods.Costable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +12,7 @@ public class Box implements Costable {
 
     }
 
+    @SuppressWarnings("unused")
     public Box(List<Costable> insideTheBox) {
         this.insideTheBox = insideTheBox;
     }

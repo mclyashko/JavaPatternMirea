@@ -1,9 +1,9 @@
-package ru.mirea.task7.Composite;
+package ru.mirea.task7.composite;
 
-import ru.mirea.task7.Composite.Order.Box;
-import ru.mirea.task7.Composite.Order.goods.Longboard;
-import ru.mirea.task7.Composite.Order.goods.MotherboardBEM1000;
-import ru.mirea.task7.Composite.Order.goods.Phone;
+import ru.mirea.task7.composite.order.Box;
+import ru.mirea.task7.composite.order.goods.Longboard;
+import ru.mirea.task7.composite.order.goods.MotherboardBEM1000;
+import ru.mirea.task7.composite.order.goods.Phone;
 
 import java.text.DecimalFormat;
 

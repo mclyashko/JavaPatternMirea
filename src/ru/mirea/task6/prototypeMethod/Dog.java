@@ -1,5 +1,6 @@
 package ru.mirea.task6.prototypeMethod;
 
+@SuppressWarnings("ALL")
 public class Dog implements Copyable {
 
     private String musicalGroup = "КИНО";

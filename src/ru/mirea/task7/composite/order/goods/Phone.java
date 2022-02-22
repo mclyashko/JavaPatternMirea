@@ -1,5 +1,6 @@
-package ru.mirea.task7.Composite.Order.goods;
+package ru.mirea.task7.composite.order.goods;
 
+@SuppressWarnings("ALL")
 public class Phone implements Costable {
     private final double cost;
     private final String OS;
@@ -9,6 +10,7 @@ public class Phone implements Costable {
         this.OS = OS;
     }
 
+    @SuppressWarnings("unused")
     public String getOS() {
         return OS;
     }

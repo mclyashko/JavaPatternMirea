@@ -1,5 +1,6 @@
-package ru.mirea.task7.Composite.Order.goods;
+package ru.mirea.task7.composite.order.goods;
 
+@SuppressWarnings("ALL")
 public class Longboard implements Costable {
     private final double cost;
     private final double width; // например, 25.4 cm
