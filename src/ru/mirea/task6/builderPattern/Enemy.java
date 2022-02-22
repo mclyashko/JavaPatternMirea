@@ -1,5 +1,6 @@
 package ru.mirea.task6.builderPattern;
 
+@SuppressWarnings("ALL")
 public abstract class Enemy {
     private int healthPoints = 0;
     private int damage = 0;
@@ -21,6 +22,7 @@ public abstract class Enemy {
         return healthPoints;
     }
 
+    @SuppressWarnings("unused")
     public int getDamage() {
         return damage;
     }

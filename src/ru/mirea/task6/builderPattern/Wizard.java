@@ -1,5 +1,6 @@
 package ru.mirea.task6.builderPattern;
 
+@SuppressWarnings("unused")
 public class Wizard extends Enemy { // можно работать и без extends Enemy
     @Override
     public void ultimateAbility() {

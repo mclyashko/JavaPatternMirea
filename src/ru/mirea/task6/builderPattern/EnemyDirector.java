@@ -1,6 +1,7 @@
 package ru.mirea.task6.builderPattern;
 
 public class EnemyDirector {
+    @SuppressWarnings("CanBeFinal")
     EnemyBuilder enemyBuilder;
 
     public EnemyDirector(EnemyBuilder enemyBuilder) {

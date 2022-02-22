@@ -1,5 +1,6 @@
 package ru.mirea.task6.abstractFactory;
 
+@SuppressWarnings({"ClassCanBeRecord", "unused"})
 public class TheWorldApp {
     public final AnimalFactory animalFactory;
 
@@ -9,7 +10,5 @@ public class TheWorldApp {
         animalFactory.makeCat().meow();
         animalFactory.makeDog().bark();
 
-//        AnimalFactory domesticAnimalFactory = new DomesticAnimalFactory();
-//        AnimalFactory strayAnimalFactory = new StrayAnimalFactory();
     }
 }

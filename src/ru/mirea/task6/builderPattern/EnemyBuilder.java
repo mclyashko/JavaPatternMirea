@@ -1,5 +1,6 @@
 package ru.mirea.task6.builderPattern;
 
+@SuppressWarnings("unused")
 public interface EnemyBuilder {
     void setHealthPoints();
 
