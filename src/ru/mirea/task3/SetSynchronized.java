@@ -1,6 +1,9 @@
 package ru.mirea.task3;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
 
 public class SetSynchronized<K> implements Set<K> {
 

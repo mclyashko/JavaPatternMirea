@@ -20,9 +20,7 @@ public class Main {
             System.out.println("task1: " + task1.get());
             System.out.println("task2: " + task2.get());
             System.out.println("task3: " + task3.get());
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace(System.err);
         }
 

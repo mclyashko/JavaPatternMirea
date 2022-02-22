@@ -1,6 +1,6 @@
 package ru.mirea.task6.abstractFactory;
 
-public class DomesticAnimalFactory implements AnimalFactory{
+public class DomesticAnimalFactory implements AnimalFactory {
     @Override
     public Catable makeCat() {
         return new DomesticCat();

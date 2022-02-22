@@ -8,7 +8,7 @@ public class Coder implements Function<String[], String[]> {
     public String[] apply(String[] strings) {
         String[] newArray = new String[strings.length];
 
-        for(int i = 0; i < strings.length; i++) {
+        for (int i = 0; i < strings.length; i++) {
             newArray[strings.length - i - 1] = new StringBuilder(strings[i]).reverse().toString();
         }
 
