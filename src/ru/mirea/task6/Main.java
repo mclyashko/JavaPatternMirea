@@ -42,5 +42,7 @@ public class Main {
 
         wizard.ultimateAbility();
         skeleton.ultimateAbility();
+
+        System.out.println("-----------------------------------------------------------------------------------------");
     }
 }
