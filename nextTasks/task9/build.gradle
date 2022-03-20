@@ -2,10 +2,69 @@ plugins {
     id 'java'
 }
 
+group 'ru.mirea'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
 sourceSets {
     main {
         java {
             srcDirs = ['src']
         }
     }
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class' : 'ru.mirea.task9.Main'
+        )
+    }
+}
+
+javadoc {
+    options.encoding = 'UTF-8'
+}
+
+task copyJar(type: Copy) {
+    dependsOn 'jar'
+    from file("$buildDir/libs/task9-1.0-SNAPSHOT.jar")
+    into file("$rootDir/src/main/resources/")
+}
+
+task dockerBuild(type: Exec) {
+    dependsOn 'copyJar'
+    commandLine "docker", "build", "-t", "task9-1.0", "./src/main/resources/"
+}
+
+task dockerRun(type: Exec) {
+    dependsOn 'dockerBuild'
+    commandLine "docker", "run", "--name", "task9-1.0", "task9-1.0"
+}
+
+task unDockerRun(type: Exec) {
+    dependsOn 'dockerRun'
+    commandLine 'docker', 'container', 'rm', 'task9-1.0'
+}
+
+task unDockerBuild(type: Exec) {
+    dependsOn 'unDockerRun'
+    commandLine 'docker', 'image', 'rm', 'task9-1.0'
+}
+
+task unCopyJar(type: Delete) {
+    dependsOn 'unDockerBuild'
+    delete file("$rootDir/src/main/resources/task9-1.0-SNAPSHOT.jar")
 }
