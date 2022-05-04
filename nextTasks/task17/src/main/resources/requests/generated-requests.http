@@ -1,0 +1,33 @@
+###
+GET http://localhost:8080/get_books/name/Hadji_Murad
+
+
+###
+GET http://localhost:8080/get_books/date/1991
+
+
+###
+GET http://localhost:8080/get_books/author_id/10
+
+
+###
+GET http://localhost:8080/get_authors/first_name/Alexander
+
+
+###
+GET http://localhost:8080/get_authors/last_name/Tolstoy
+
+
+###
+GET http://localhost:8080/get_authors/middle_name/Olegovich
+
+
+###
+GET http://localhost:8080/get_authors/date/1828
+
+
+###
+GET http://localhost:8080/actuator
+
+
+

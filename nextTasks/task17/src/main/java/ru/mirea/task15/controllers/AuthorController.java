@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import ru.mirea.task15.entities.Author;
+import ru.mirea.task15.entities.Book;
 import ru.mirea.task15.service.AuthorService;
 
 import java.util.List;
@@ -32,5 +33,29 @@ public class AuthorController {
     public boolean deleteBook(Integer id) {
         authorService.deleteAuthorById(id);
         return authorService.getAuthors().size() != 0;
+    }
+
+    @GetMapping("/get_authors/first_name/{first_name}")
+    @ResponseBody
+    public List<Author> getBooksByFirstName(@PathVariable String first_name) {
+        return authorService.getAuthorsFilteredBy("firstName", first_name);
+    }
+
+    @GetMapping("/get_authors/last_name/{last_name}")
+    @ResponseBody
+    public List<Author> getBooksByLastName(@PathVariable String last_name) {
+        return authorService.getAuthorsFilteredBy("lastName", last_name);
+    }
+
+    @GetMapping("/get_authors/middle_name/{middle_name}")
+    @ResponseBody
+    public List<Author> getBooksByMiddleName(@PathVariable String middle_name) {
+        return authorService.getAuthorsFilteredBy("middleName", middle_name);
+    }
+
+    @GetMapping("/get_authors/date/{date}")
+    @ResponseBody
+    public List<Author> getBooksByDate(@PathVariable String date) {
+        return authorService.getAuthorsFilteredBy("birthDate", date);
     }
 }
