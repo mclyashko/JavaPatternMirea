@@ -138,3 +138,9 @@
                 – Completed initialization in 3 ms
 39149 [http-nio-8080-exec-1] INFO  r.mirea.task18.services.BookService
                 – getBooksByCreationDate 1991
+210741 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+210780 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+210807 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
