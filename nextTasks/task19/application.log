@@ -1,0 +1,140 @@
+456  [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.3.Final
+460  [main] INFO  ru.mirea.task18.Task18Application
+                – Starting Task18Application using Java 17 on iMac-Viktor.local with PID 70289 (/Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task19/target/classes started by viktorlasenko in /Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task19)
+461  [main] INFO  ru.mirea.task18.Task18Application
+                – No active profile set, falling back to 1 default profile: "default"
+846  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+846  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+884  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+1062 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+1063 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+1066 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task18.repositories.AuthorRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+1067 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task18.repositories.BookRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+1067 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+1372 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+1378 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+1378 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+1378 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.62]
+1451 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+1451 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 961 ms
+1572 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+1660 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+1688 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+1731 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.8.Final
+1860 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+1947 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2331 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2337 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2584 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2939 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 13 endpoint(s) beneath base path '/actuator'
+2965 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+2979 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+2992 [main] INFO  ru.mirea.task18.Task18Application
+                – Started Task18Application in 2.763 seconds (JVM running for 3.626)
+3415 [RMI TCP Connection(5)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+3415 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+3417 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 2 ms
+87519 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+87531 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+87543 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+1646 [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.3.Final
+1654 [main] INFO  ru.mirea.task18.Task18Application
+                – Starting Task18Application using Java 17 on iMac-Viktor.local with PID 70380 (/Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task19/target/classes started by viktorlasenko in /Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task19)
+1656 [main] INFO  ru.mirea.task18.Task18Application
+                – No active profile set, falling back to 1 default profile: "default"
+2692 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+2715 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2782 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+3077 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+3078 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+3083 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task18.repositories.AuthorRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+3083 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task18.repositories.BookRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+3083 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+3581 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+3591 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+3592 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+3592 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.62]
+3691 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+3692 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1976 ms
+3893 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4059 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4095 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+4148 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.8.Final
+4300 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+4413 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+4907 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+4915 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+5236 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+6174 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 13 endpoint(s) beneath base path '/actuator'
+6207 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+6229 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+6245 [main] INFO  ru.mirea.task18.Task18Application
+                – Started Task18Application in 5.637 seconds (JVM running for 6.84)
+7237 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+7239 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+7242 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 3 ms
+39149 [http-nio-8080-exec-1] INFO  r.mirea.task18.services.BookService
+                – getBooksByCreationDate 1991
