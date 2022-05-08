@@ -1,0 +1,650 @@
+466  [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.3.Final
+467  [main] INFO  ru.mirea.task21.Task21Application
+                – Starting Task18Application using Java 17 on iMac-Viktor with PID 2137 (/Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task21/target/classes started by viktorlasenko in /Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task21)
+468  [main] INFO  ru.mirea.task21.Task21Application
+                – No active profile set, falling back to 1 default profile: "default"
+871  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+871  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+907  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
+1107 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+1108 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+1113 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task21.repositories.AuthorRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+1113 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task21.repositories.BookRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+1113 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+1506 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+1512 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+1512 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+1512 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.62]
+1588 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+1588 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1094 ms
+1724 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+1783 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+1809 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+1846 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.8.Final
+1942 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2010 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2328 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2333 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2338 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext
+                – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'emailAspect' defined in file [/Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task21/target/classes/ru/mirea/task21/aspects/EmailAspect.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Lifecycle method annotation requires a no-arg method: public void ru.mirea.task21.aspects.EmailAspect.context(ru.mirea.task21.services.EmailService)
+2338 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+2339 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+2342 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+2344 [main] INFO  o.a.catalina.core.StandardService
+                – Stopping service [Tomcat]
+2354 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener
+                –
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2368 [main] ERROR o.s.boot.SpringApplication
+                – Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'emailAspect' defined in file [/Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task21/target/classes/ru/mirea/task21/aspects/EmailAspect.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Lifecycle method annotation requires a no-arg method: public void ru.mirea.task21.aspects.EmailAspect.context(ru.mirea.task21.services.EmailService)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at ru.mirea.task21.Task21Application.main(Task18Application.java:10)
+Caused by: java.lang.IllegalStateException: Lifecycle method annotation requires a no-arg method: public void ru.mirea.task21.aspects.EmailAspect.context(ru.mirea.task21.services.EmailService)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.<init>(InitDestroyAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.lambda$buildLifecycleMetadata$0(InitDestroyAnnotationBeanPostProcessor.java:234)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:324)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.buildLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:232)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.findLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:210)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(InitDestroyAnnotationBeanPostProcessor.java:149)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:305)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	... 15 common frames omitted
+346  [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.3.Final
+346  [main] INFO  ru.mirea.task21.Task21Application
+                – Starting Task18Application using Java 17 on iMac-Viktor with PID 2253 (/Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task21/target/classes started by viktorlasenko in /Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task21)
+348  [main] INFO  ru.mirea.task21.Task21Application
+                – No active profile set, falling back to 1 default profile: "default"
+713  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+713  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+742  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+920  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+921  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+925  [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task21.repositories.AuthorRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+925  [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task21.repositories.BookRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+925  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+1294 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+1299 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+1299 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+1300 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.62]
+1363 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+1363 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 991 ms
+1490 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+1542 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+1568 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+1599 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.8.Final
+1703 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+1762 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2071 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2076 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2332 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2686 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 13 endpoint(s) beneath base path '/actuator'
+2706 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+2720 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+2732 [main] INFO  ru.mirea.task21.Task21Application
+                – Started Task18Application in 2.561 seconds (JVM running for 2.953)
+2932 [RMI TCP Connection(2)-192.168.50.30] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+2933 [RMI TCP Connection(2)-192.168.50.30] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+2934 [RMI TCP Connection(2)-192.168.50.30] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+3223 [RMI TCP Connection(1)-192.168.50.30] WARN  o.s.b.a.mail.MailHealthIndicator
+                – Mail health check failed
+javax.mail.AuthenticationFailedException: 535 5.7.0 Invalid login or password
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:947)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:858)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:762)
+	at javax.mail.Service.connect(Service.java:342)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:518)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.testConnection(JavaMailSenderImpl.java:398)
+	at org.springframework.boot.actuate.mail.MailHealthIndicator.doHealthCheck(MailHealthIndicator.java:42)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:77)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:40)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:130)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:126)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:95)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:66)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:71)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:122)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:97)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor77.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+70882 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+70883 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+70884 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+317  [main] INFO  ru.mirea.task21.Task21Application
+                – Starting Task18Application using Java 17 on iMac-Viktor with PID 2280 (/Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task21/target/classes started by viktorlasenko in /Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task21)
+317  [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.3.Final
+318  [main] INFO  ru.mirea.task21.Task21Application
+                – No active profile set, falling back to 1 default profile: "default"
+670  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+670  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+697  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+860  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+860  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+863  [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task21.repositories.AuthorRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+864  [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task21.repositories.BookRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+864  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+1216 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+1221 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+1221 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+1221 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.62]
+1281 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+1281 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 937 ms
+1406 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+1447 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+1471 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+1499 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.8.Final
+1586 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+1642 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+1946 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+1951 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2209 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2571 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 13 endpoint(s) beneath base path '/actuator'
+2593 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+2608 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+2618 [main] INFO  ru.mirea.task21.Task21Application
+                – Started Task18Application in 2.469 seconds (JVM running for 2.845)
+3073 [RMI TCP Connection(2)-192.168.50.30] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+3074 [RMI TCP Connection(2)-192.168.50.30] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+3075 [RMI TCP Connection(2)-192.168.50.30] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+3275 [RMI TCP Connection(1)-192.168.50.30] WARN  o.s.b.a.mail.MailHealthIndicator
+                – Mail health check failed
+javax.mail.AuthenticationFailedException: 535 5.7.0 Invalid login or password
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:947)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:858)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:762)
+	at javax.mail.Service.connect(Service.java:342)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:518)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.testConnection(JavaMailSenderImpl.java:398)
+	at org.springframework.boot.actuate.mail.MailHealthIndicator.doHealthCheck(MailHealthIndicator.java:42)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:77)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:40)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:130)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:126)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:95)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:66)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:71)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:122)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:97)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor77.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+139765 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+139768 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+139769 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+314  [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.3.Final
+314  [main] INFO  ru.mirea.task21.Task21Application
+                – Starting Task18Application using Java 17 on iMac-Viktor with PID 2306 (/Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task21/target/classes started by viktorlasenko in /Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task21)
+316  [main] INFO  ru.mirea.task21.Task21Application
+                – No active profile set, falling back to 1 default profile: "default"
+660  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+660  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+688  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+850  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+850  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+853  [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task21.repositories.AuthorRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+854  [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task21.repositories.BookRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+854  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+1205 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+1209 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+1209 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+1210 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.62]
+1273 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+1273 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 933 ms
+1395 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+1441 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+1465 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+1491 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.8.Final
+1582 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+1639 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+1963 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+1968 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2245 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2608 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 13 endpoint(s) beneath base path '/actuator'
+2627 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+2640 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+2649 [main] INFO  ru.mirea.task21.Task21Application
+                – Started Task18Application in 2.497 seconds (JVM running for 2.876)
+3065 [RMI TCP Connection(3)-192.168.50.30] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+3065 [RMI TCP Connection(3)-192.168.50.30] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+3066 [RMI TCP Connection(3)-192.168.50.30] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+24435 [http-nio-8080-exec-1] INFO  ru.mirea.task21.aspects.LogAspect
+                – Time: 2022-05-08T16:17:16.305318
+24836 [http-nio-8080-exec-1] INFO  ru.mirea.task21.aspects.LogAspect
+                – Time: 2022-05-08T16:17:16.706517
+347  [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.3.Final
+350  [main] INFO  ru.mirea.task21.Task21Application
+                – Starting Task21Application using Java 17 on iMac-Viktor with PID 1175 (/Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task21/target/classes started by viktorlasenko in /Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task21)
+350  [main] INFO  ru.mirea.task21.Task21Application
+                – No active profile set, falling back to 1 default profile: "default"
+708  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+708  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+737  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+906  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+906  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+910  [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task21.repositories.AuthorRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+911  [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task21.repositories.BookRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+911  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+1265 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+1270 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+1270 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+1270 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.62]
+1327 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+1328 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 953 ms
+1455 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+1574 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+1599 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+1633 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.8.Final
+1718 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+1784 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2137 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2142 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2418 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2781 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 13 endpoint(s) beneath base path '/actuator'
+2803 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+2814 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+2825 [main] INFO  ru.mirea.task21.Task21Application
+                – Started Task21Application in 2.659 seconds (JVM running for 3.074)
+3146 [RMI TCP Connection(1)-192.168.50.30] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+3146 [RMI TCP Connection(1)-192.168.50.30] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+3147 [RMI TCP Connection(1)-192.168.50.30] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+127708 [http-nio-8080-exec-1] INFO  ru.mirea.task21.aspects.LogAspect
+                – Time: 2022-05-08T16:39:22.314494
+127958 [http-nio-8080-exec-1] INFO  ru.mirea.task21.aspects.LogAspect
+                – Time: 2022-05-08T16:39:22.564768
+255678 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+255683 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+255687 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+343  [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.3.Final
+345  [main] INFO  ru.mirea.task21.Task21Application
+                – Starting Task21Application using Java 17 on iMac-Viktor with PID 1256 (/Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task21/target/classes started by viktorlasenko in /Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task21)
+345  [main] INFO  ru.mirea.task21.Task21Application
+                – No active profile set, falling back to 1 default profile: "default"
+709  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+709  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+737  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+899  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+899  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+903  [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task21.repositories.AuthorRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+903  [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task21.repositories.BookRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+903  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+1255 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+1259 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+1259 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+1259 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.62]
+1319 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+1319 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 946 ms
+1469 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+1520 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+1548 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+1577 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.8.Final
+1670 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+1735 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2054 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2060 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2326 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2769 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 13 endpoint(s) beneath base path '/actuator'
+2791 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+2803 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+2815 [main] INFO  ru.mirea.task21.Task21Application
+                – Started Task21Application in 2.641 seconds (JVM running for 3.051)
+3163 [RMI TCP Connection(3)-192.168.50.30] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+3163 [RMI TCP Connection(3)-192.168.50.30] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+3165 [RMI TCP Connection(3)-192.168.50.30] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+6339 [http-nio-8080-exec-1] INFO  ru.mirea.task21.aspects.LogAspect
+                – Time: 2022-05-08T16:41:57.357238
+6533 [http-nio-8080-exec-1] INFO  ru.mirea.task21.aspects.LogAspect
+                – Time: 2022-05-08T16:41:57.551270
+93786 [http-nio-8080-exec-3] INFO  ru.mirea.task21.aspects.LogAspect
+                – Time: 2022-05-08T16:43:24.804815
+93948 [http-nio-8080-exec-3] INFO  ru.mirea.task21.aspects.LogAspect
+                – Time: 2022-05-08T16:43:24.966174
+270853 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+270854 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+270855 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+355  [main] INFO  ru.mirea.task21.Task21Application
+                – Starting Task21Application using Java 17 on iMac-Viktor with PID 1612 (/Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task21/target/classes started by viktorlasenko in /Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task21)
+354  [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.3.Final
+356  [main] INFO  ru.mirea.task21.Task21Application
+                – No active profile set, falling back to 1 default profile: "default"
+728  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+728  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+761  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+1022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+1023 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+1028 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task21.repositories.AuthorRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+1029 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task21.repositories.BookRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+1029 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+1443 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+1450 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+1450 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+1450 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.62]
+1531 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+1532 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1150 ms
+1674 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+1728 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+1758 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+1790 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.8.Final
+1891 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+1945 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2230 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2234 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2502 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2921 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 13 endpoint(s) beneath base path '/actuator'
+2943 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+2958 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+2969 [main] INFO  ru.mirea.task21.Task21Application
+                – Started Task21Application in 2.796 seconds (JVM running for 3.2)
+3143 [RMI TCP Connection(4)-192.168.50.30] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+3143 [RMI TCP Connection(4)-192.168.50.30] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+3144 [RMI TCP Connection(4)-192.168.50.30] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+73971 [http-nio-8080-exec-1] INFO  ru.mirea.task21.aspects.LogAspect
+                – Time: 2022-05-08T17:07:59.586954
+74183 [http-nio-8080-exec-1] INFO  ru.mirea.task21.aspects.LogAspect
+                – Time: 2022-05-08T17:07:59.798545
+78647 [http-nio-8080-exec-3] INFO  ru.mirea.task21.aspects.LogAspect
+                – Time: 2022-05-08T17:08:04.262863
+78947 [http-nio-8080-exec-3] INFO  ru.mirea.task21.aspects.LogAspect
+                – Time: 2022-05-08T17:08:04.562831
+256897 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+256902 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+256906 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
