@@ -1,0 +1,334 @@
+369  [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.3.Final
+370  [main] INFO  ru.mirea.task22.Task22Application
+                – Starting Task22Application using Java 17 on iMac-Viktor.local with PID 12688 (/Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task22/target/classes started by viktorlasenko in /Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task22)
+372  [main] INFO  ru.mirea.task22.Task22Application
+                – No active profile set, falling back to 1 default profile: "default"
+749  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+750  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+785  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+965  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+966  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+970  [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task22.repositories.AuthorRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+970  [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task22.repositories.BookRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+970  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+1364 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+1370 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+1370 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+1370 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.62]
+1438 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+1438 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1041 ms
+1587 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+1670 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+1695 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+1730 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.8.Final
+1831 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+1890 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2196 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2200 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2495 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2912 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 13 endpoint(s) beneath base path '/actuator'
+2941 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+2961 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+2974 [main] INFO  ru.mirea.task22.Task22Application
+                – Started Task22Application in 2.794 seconds (JVM running for 3.475)
+3255 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+3255 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+3256 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+250262 [task-1] INFO  ru.mirea.task22.aspects.LogAspect
+                – Time: 2022-05-10T13:53:29.914509
+250272 [task-1] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler
+                – Unexpected exception occurred invoking async method: public void ru.mirea.task22.services.SchedulerService.backupMe() throws java.io.IOException
+java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:208)
+	at ru.mirea.task22.services.SchedulerService.clear(SchedulerService.java:41)
+	at ru.mirea.task22.services.SchedulerService.backupMe(SchedulerService.java:33)
+	at ru.mirea.task22.services.SchedulerService$$FastClassBySpringCGLIB$$eda18a08.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+303811 [task-2] INFO  ru.mirea.task22.aspects.LogAspect
+                – Time: 2022-05-10T13:54:23.463528
+303821 [task-2] INFO  ru.mirea.task22.aspects.LogAspect
+                – Time: 2022-05-10T13:54:23.473971
+303971 [task-2] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler
+                – Unexpected exception occurred invoking async method: public void ru.mirea.task22.services.SchedulerService.backupMe() throws java.io.IOException
+org.hibernate.LazyInitializationException: could not initialize proxy [ru.mirea.task22.entities.Author#1] - no Session
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:176)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:322)
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:45)
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:95)
+	at ru.mirea.task22.entities.Author$HibernateProxy$saN7KnNw.toString(Unknown Source)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:453)
+	at ru.mirea.task22.entities.Book.toString(Book.java:40)
+	at ru.mirea.task22.services.SchedulerService.write(SchedulerService.java:54)
+	at ru.mirea.task22.services.SchedulerService.backupMe(SchedulerService.java:34)
+	at ru.mirea.task22.services.SchedulerService$$FastClassBySpringCGLIB$$eda18a08.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+359004 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+359008 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+359011 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+337  [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.3.Final
+337  [main] INFO  ru.mirea.task22.Task22Application
+                – Starting Task22Application using Java 17 on iMac-Viktor.local with PID 12888 (/Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task22/target/classes started by viktorlasenko in /Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task22)
+338  [main] INFO  ru.mirea.task22.Task22Application
+                – No active profile set, falling back to 1 default profile: "default"
+786  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+787  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+821  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+1007 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+1008 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+1012 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task22.repositories.AuthorRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+1013 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task22.repositories.BookRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+1013 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+1427 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+1434 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+1434 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+1434 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.62]
+1531 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+1531 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1167 ms
+1690 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+1740 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+1765 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+1793 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.8.Final
+1879 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+1937 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2280 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2287 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2605 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3137 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 13 endpoint(s) beneath base path '/actuator'
+3175 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+3190 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+3204 [main] INFO  ru.mirea.task22.Task22Application
+                – Started Task22Application in 3.04 seconds (JVM running for 3.421)
+3462 [RMI TCP Connection(8)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+3462 [RMI TCP Connection(8)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+3464 [RMI TCP Connection(8)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 2 ms
+36128 [task-1] INFO  ru.mirea.task22.aspects.LogAspect
+                – Time: 2022-05-10T13:56:01.785339
+36150 [task-1] INFO  ru.mirea.task22.aspects.LogAspect
+                – Time: 2022-05-10T13:56:01.808786
+36249 [task-1] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler
+                – Unexpected exception occurred invoking async method: public void ru.mirea.task22.services.SchedulerService.backupMe() throws java.io.IOException
+org.hibernate.LazyInitializationException: could not initialize proxy [ru.mirea.task22.entities.Author#1] - no Session
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:176)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:322)
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:45)
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:95)
+	at ru.mirea.task22.entities.Author$HibernateProxy$FRHn6IUY.toString(Unknown Source)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:453)
+	at ru.mirea.task22.entities.Book.toString(Book.java:40)
+	at ru.mirea.task22.services.SchedulerService.write(SchedulerService.java:54)
+	at ru.mirea.task22.services.SchedulerService.backupMe(SchedulerService.java:34)
+	at ru.mirea.task22.services.SchedulerService$$FastClassBySpringCGLIB$$eda18a08.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+178733 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+178741 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+178745 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+338  [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.3.Final
+338  [main] INFO  ru.mirea.task22.Task22Application
+                – Starting Task22Application using Java 17 on iMac-Viktor.local with PID 12940 (/Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task22/target/classes started by viktorlasenko in /Users/viktorlasenko/Documents/Books_and_materials/2курс/4сем/Patterns_Java2.0/JavaPatternMirea/nextTasks/task22)
+339  [main] INFO  ru.mirea.task22.Task22Application
+                – No active profile set, falling back to 1 default profile: "default"
+710  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+710  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+738  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+912  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Multiple Spring Data modules found, entering strict repository configuration mode!
+916  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+920  [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task22.repositories.AuthorRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+920  [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport
+                – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.mirea.task22.repositories.BookRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+920  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+1301 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+1306 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+1306 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+1306 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.62]
+1370 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+1371 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1007 ms
+1510 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+1559 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+1601 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+1638 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.8.Final
+1726 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+1784 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2130 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2136 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2542 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3044 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 13 endpoint(s) beneath base path '/actuator'
+3081 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+3095 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+3107 [main] INFO  ru.mirea.task22.Task22Application
+                – Started Task22Application in 2.932 seconds (JVM running for 3.346)
+3595 [RMI TCP Connection(7)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+3595 [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+3596 [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+22306 [task-1] INFO  ru.mirea.task22.aspects.LogAspect
+                – Time: 2022-05-10T13:58:49.289800
+22317 [task-1] INFO  ru.mirea.task22.aspects.LogAspect
+                – Time: 2022-05-10T13:58:49.301799
+22422 [task-1] INFO  ru.mirea.task22.aspects.LogAspect
+                – Time: 2022-05-10T13:58:49.406131
+93014 [task-2] INFO  ru.mirea.task22.aspects.LogAspect
+                – Time: 2022-05-10T13:59:59.998778
+93016 [task-2] INFO  ru.mirea.task22.aspects.LogAspect
+                – Time: 2022-05-10T14:00:00.000893
+93021 [task-2] INFO  ru.mirea.task22.aspects.LogAspect
+                – Time: 2022-05-10T14:00:00.005366
+130266 [task-3] INFO  ru.mirea.task22.aspects.LogAspect
+                – Time: 2022-05-10T14:00:37.250110
+130274 [task-3] INFO  ru.mirea.task22.aspects.LogAspect
+                – Time: 2022-05-10T14:00:37.258005
+130289 [task-3] INFO  ru.mirea.task22.aspects.LogAspect
+                – Time: 2022-05-10T14:00:37.273208
+149515 [task-4] INFO  ru.mirea.task22.aspects.LogAspect
+                – Time: 2022-05-10T14:00:56.499508
+149519 [task-4] INFO  ru.mirea.task22.aspects.LogAspect
+                – Time: 2022-05-10T14:00:56.503460
+149526 [task-4] INFO  ru.mirea.task22.aspects.LogAspect
+                – Time: 2022-05-10T14:00:56.510145
+169675 [task-5] INFO  ru.mirea.task22.aspects.LogAspect
+                – Time: 2022-05-10T14:01:16.659087
+169677 [task-5] INFO  ru.mirea.task22.aspects.LogAspect
+                – Time: 2022-05-10T14:01:16.661110
+169680 [task-5] INFO  ru.mirea.task22.aspects.LogAspect
+                – Time: 2022-05-10T14:01:16.664362
+446259 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+446264 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+446269 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.

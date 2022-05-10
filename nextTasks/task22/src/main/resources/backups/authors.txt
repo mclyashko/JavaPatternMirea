@@ -1,0 +1,7 @@
+Author{id=1, firstName='Alexander', lastName='Pushkin', middleName='Sergeyevich', birthDate='1799'}
+Author{id=2, firstName='Mikhail', lastName='Lermontov', middleName='Yuryevich', birthDate='1837'}
+Author{id=3, firstName='Lev', lastName='Tolstoy', middleName='Nikolayevich', birthDate='1828'}
+Author{id=4, firstName='Victor', lastName='Pelevin', middleName='Olegovich', birthDate='1962'}
+Author{id=5, firstName='Bret', lastName='Ellis', middleName='Easton', birthDate='1964'}
+Author{id=42, firstName='Sergey', lastName='Kara-Murza', middleName='Georgyevich', birthDate='1939'}
+Author{id=43, firstName='Friedrich', lastName='Engels', middleName='None', birthDate='1820'}
