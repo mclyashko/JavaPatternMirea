@@ -1,0 +1,10 @@
+Book{id=1, name='Eugene_Onegin', creationDate='1833', authorId=1}
+Book{id=2, name='The_Captains_Daughter', creationDate='1836', authorId=1}
+Book{id=3, name='A_Hero_of_Our_Time', creationDate='1840', authorId=2}
+Book{id=4, name='Mtsyri', creationDate='1840', authorId=2}
+Book{id=5, name='War_and_Peace', creationDate='1869', authorId=3}
+Book{id=6, name='Anna_Karenina', creationDate='1878', authorId=3}
+Book{id=8, name='S.N.U.F.F.', creationDate='2011', authorId=4}
+Book{id=9, name='Less_Than_Zero', creationDate='1985', authorId=5}
+Book{id=10, name='American Psycho', creationDate='1991', authorId=5}
+Book{id=7, name='Omon Ra', creationDate='1991', authorId=4}

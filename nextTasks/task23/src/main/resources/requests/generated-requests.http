@@ -1,0 +1,263 @@
+###
+POST http://127.0.0.1:8080/add_author
+Content-Type: application/json
+
+{
+  "firstName": "Alexander",
+  "lastName": "Pushkin",
+  "middleName": "Sergeyevich",
+  "birthDate": "1799"
+}
+
+
+###
+POST http://127.0.0.1:8080/add_author
+Content-Type: application/json
+
+{
+  "firstName": "Sergey",
+  "lastName": "Kara-Murza",
+  "middleName": "Georgyevich",
+  "birthDate": "1939"
+}
+
+
+###
+POST http://127.0.0.1:8080/add_author
+Content-Type: application/json
+
+{
+  "firstName": "Friedrich",
+  "lastName": "Engels",
+  "middleName": "None",
+  "birthDate": "1820"
+}
+
+
+###
+POST http://127.0.0.1:8080/add_author
+Content-Type: application/json
+
+{
+  "firstName": "Mikhail",
+  "lastName": "Lermontov",
+  "middleName": "Yuryevich",
+  "birthDate": "1837"
+}
+
+
+###
+POST http://127.0.0.1:8080/add_author
+Content-Type: application/json
+
+{
+  "firstName": "Lev",
+  "lastName": "Tolstoy",
+  "middleName": "Nikolayevich",
+  "birthDate": "1828"
+}
+
+
+###
+POST http://127.0.0.1:8080/add_author
+Content-Type: application/json
+
+{
+  "firstName": "Victor",
+  "lastName": "Pelevin",
+  "middleName": "Olegovich",
+  "birthDate": "1962"
+}
+
+
+###
+POST http://127.0.0.1:8080/add_author
+Content-Type: application/json
+
+{
+  "firstName": "Bret",
+  "lastName": "Ellis",
+  "middleName": "Easton",
+  "birthDate": "1964"
+}
+
+
+###
+POST http://127.0.0.1:8080/add_book
+Content-Type: application/json
+
+{
+  "name": "Eugene_Onegin",
+  "creationDate": "1833",
+  "authorId": 1
+}
+
+
+###
+POST http://127.0.0.1:8080/add_book
+Content-Type: application/json
+
+{
+  "name": "The_Captains_Daughter",
+  "creationDate": "1836",
+  "authorId": 1
+}
+
+
+###
+POST http://127.0.0.1:8080/add_book
+Content-Type: application/json
+
+{
+  "name": "A_Hero_of_Our_Time",
+  "creationDate": "1840",
+  "authorId": 2
+}
+
+
+###
+POST http://127.0.0.1:8080/add_book
+Content-Type: application/json
+
+{
+  "name": "Mtsyri",
+  "creationDate": "1840",
+  "authorId": 2
+}
+
+
+###
+POST http://127.0.0.1:8080/add_book
+Content-Type: application/json
+
+{
+  "name": "War_and_Peace",
+  "creationDate": "1869",
+  "authorId": 3
+}
+
+
+###
+POST http://127.0.0.1:8080/add_book
+Content-Type: application/json
+
+{
+  "name": "Anna_Karenina",
+  "creationDate": "1878",
+  "authorId": 3
+}
+
+
+###
+POST http://127.0.0.1:8080/add_book
+Content-Type: application/json
+
+{
+  "name": "Omon Ra",
+  "creationDate": "1992",
+  "authorId": 4
+}
+
+
+###
+POST http://127.0.0.1:8080/add_book
+Content-Type: application/json
+
+{
+  "name": "S.N.U.F.F.",
+  "creationDate": "2011",
+  "authorId": 4
+}
+
+
+###
+POST http://127.0.0.1:8080/add_book
+Content-Type: application/json
+
+{
+  "name": "Less_Than_Zero",
+  "creationDate": "1985",
+  "authorId": 5
+}
+
+
+###
+POST http://127.0.0.1:8080/add_book
+Content-Type: application/json
+
+{
+  "name": "American Psycho",
+  "creationDate": "1991",
+  "authorId": 5
+}
+
+
+### init ended
+GET http://127.0.0.1:8080/get_authors
+
+
+###
+GET http://127.0.0.1:8080/get_books
+
+
+###
+GET http://127.0.0.1:8080/get_books/3/author
+
+
+###
+GET http://localhost:8080/get_books/name/Anna_Karenina
+
+
+###
+GET http://localhost:8080/get_books/date/1991
+
+
+###
+GET http://localhost:8080/get_books/author_id/3
+
+
+###
+GET http://localhost:8080/get_authors/first_name/Alexander
+
+
+###
+GET http://localhost:8080/get_authors/last_name/Tolstoy
+
+
+###
+GET http://localhost:8080/get_authors/middle_name/Olegovich
+
+
+###
+GET http://localhost:8080/get_authors/date/1828
+
+
+###
+GET http://localhost:8080/actuator
+
+
+###
+POST http://127.0.0.1:8080/registration
+Content-Type: application/json
+
+{
+  "login": "root",
+  "password": "root"
+}
+
+
+###
+POST http://127.0.0.1:8080/registration
+Content-Type: application/json
+
+{
+  "login": "admin",
+  "password": "admin"
+}
+
+
+###
+POST http://127.0.0.1:8080/login
+Content-Type: application/x-www-form-urlencoded
+
+login=admin&password=admin
