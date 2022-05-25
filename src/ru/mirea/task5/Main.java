@@ -15,5 +15,8 @@ public class Main {
         if (!(singleton1 == singleton11 && singleton2 == singleton21 && singleton3 == singleton31)) {
             System.out.println("Not Singleton");
         }
+        else {
+            System.out.println("Singleton");
+        }
     }
 }
